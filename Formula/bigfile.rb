@@ -7,11 +7,11 @@ class Bigfile < Formula
 
   if OS.mac?
     url "https://github.com/bigfile/bigfile/releases/download/v1.0.0/bigfile_1.0.0_darwin_amd64.tar.gz"
-    sha256 "a9492ab18b20b07c99cb2b9c14797ef5f37fb6e41a37d99b43988690a88e32b8"
+    sha256 "0a036440e7195f33b5bd77eeb35a453bbe28f52c85db4e4dbbef869ce18c6917"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/bigfile/bigfile/releases/download/v1.0.0/bigfile_1.0.0_linux_amd64.tar.gz"
-      sha256 "0e190757db211bd60a588b7cd1c975e44ece0523c1c6413a5f994b053c40e5f4"
+      sha256 "135c14d58ce21349362f785f1ddaff0711986015dab5e6f894deeae186d0afa7"
     end
   end
 
