@@ -7,19 +7,19 @@ class Bigfile < Formula
 
   if OS.mac?
     url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_darwin_amd64.tar.gz"
-    sha256 "bbcb0a303fe1149d8078857acc2a6c5f34ddb101cb0f57bc4969f31372435178"
+    sha256 "3e78eb97e46500e05b245da7b0da41ee81fee52684d52eea34480f19110126d6"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_linux_amd64.tar.gz"
-      sha256 "e1642b971263f60ac32effbe3b5b7898e8c9934e0da9a8f6ca1c392a897f8b46"
+      sha256 "1bb6be90ec9cfc664240f736365f24db6f2997c71567ccef29c5de366f8d2fe0"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_linux_arm64.tar.gz"
-        sha256 "8519926ea99af079178cb039ff3a62b471cd73200dcc3d78674e75bc0ac06862"
+        sha256 "c361721a9027ba8fd797e4a0aa2f139ae7008d76240fa3559dab57a67042f9fc"
       else
         url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_linux_armv7.tar.gz"
-        sha256 "a82535eeb7caa9d50eb52b0d00d9cb009a67e3f49ec48ecd2e9c7f3a500f3004"
+        sha256 "f0d9c6688129f01ada94a94e43c0b470e15b000c023b0a1221ed14664267ba14"
       end
     end
   end
