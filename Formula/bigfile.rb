@@ -2,24 +2,24 @@
 class Bigfile < Formula
   desc "A file transfer system that supports http, rpc and ftp protocols"
   homepage "https://bigfile.site"
-  version "1.0.7"
+  version "1.0.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_darwin_amd64.tar.gz"
-    sha256 "3e78eb97e46500e05b245da7b0da41ee81fee52684d52eea34480f19110126d6"
+    url "https://github.com/bigfile/bigfile/releases/download/v1.0.8/bigfile_1.0.8_darwin_amd64.tar.gz"
+    sha256 "4931faa7e3846abd69fe388c6993dc1cc3f0809f351ef4967e9aed4094f271c1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_linux_amd64.tar.gz"
-      sha256 "1bb6be90ec9cfc664240f736365f24db6f2997c71567ccef29c5de366f8d2fe0"
+      url "https://github.com/bigfile/bigfile/releases/download/v1.0.8/bigfile_1.0.8_linux_amd64.tar.gz"
+      sha256 "0308abb65925516e47d4fb7dd9d391d80c9983d942bb94ec27ef61797d4fd5de"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_linux_arm64.tar.gz"
-        sha256 "c361721a9027ba8fd797e4a0aa2f139ae7008d76240fa3559dab57a67042f9fc"
+        url "https://github.com/bigfile/bigfile/releases/download/v1.0.8/bigfile_1.0.8_linux_arm64.tar.gz"
+        sha256 "6f5542f4d9b2a463b14e34c94d3b7e98263f9e09029c963d7136dc3ed00dbff4"
       else
-        url "https://github.com/bigfile/bigfile/releases/download/v1.0.7/bigfile_1.0.7_linux_armv7.tar.gz"
-        sha256 "f0d9c6688129f01ada94a94e43c0b470e15b000c023b0a1221ed14664267ba14"
+        url "https://github.com/bigfile/bigfile/releases/download/v1.0.8/bigfile_1.0.8_linux_armv7.tar.gz"
+        sha256 "2a0298d9a490cd47492957354b66b5ea8215aadaccffadbf3cfe56df559668e6"
       end
     end
   end
